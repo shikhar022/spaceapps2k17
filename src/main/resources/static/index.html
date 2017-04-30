@@ -1,0 +1,106 @@
+<!doctype html>
+<!--
+  ~ SUNSHINE TEAHOUSE PRIVATE LIMITED CONFIDENTIAL
+  ~ __________________
+  ~
+  ~ [2015] - [2017] Sunshine Teahouse Private Limited
+  ~ All Rights Reserved.
+  ~
+  ~ NOTICE:  All information contained herein is, and remains
+  ~ the property of Sunshine Teahouse Private Limited and its suppliers,
+  ~ if any.  The intellectual and technical concepts contained
+  ~ herein are proprietary to Sunshine Teahouse Private Limited
+  ~ and its suppliers, and are protected by trade secret or copyright law.
+  ~ Dissemination of this information or reproduction of this material
+  ~ is strictly forbidden unless prior written permission is obtained
+  ~ from Sunshine Teahouse Private Limited.
+  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA- SPACE APPS</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="libs/materialize/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="libs/select2/select2.min.css">
+    <link rel="stylesheet" href="libs/alert/alert.css">
+    <!-- custom styles -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- custom method to disable back button -->
+    <script type = "text/javascript" >
+        history.pushState(null, null, '');
+        window.addEventListener('popstate', function(event) {
+            history.pushState(null, null, '');
+        });
+    </script>
+    <!-- custom method to disable back button -->
+
+</head>
+<body data-ng-app="chatApp">
+    <!-- Spinner code starts here-->
+    <div class="overlay" data-ng-show="showSpinner">
+        <div id="space-spinner" class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Spinner code ends here-->
+    <div class="overlay" data-ng-show="showOverlay"></div>
+
+
+    <div class="row" ui-view></div>
+
+
+    <!-- Alert Service Template  -->
+    <div id="materialModal" onclick="closeMaterialAlert(event, false)" class="hide">
+        <div id="materialModalCentered">
+            <div id="materialModalContent" onclick="event.stopPropagation()">
+                <div id="materialModalTitle">&nbsp;</div>
+                <div id="materialModalText">&nbsp;</div>
+                <div id="materialModalButtons">
+                    <div id="materialModalButtonDismiss" class="materialModalButton" onclick="closeMaterialAlert(event, true)">
+                        <a>OK</a>
+                    </div>
+                    <div id="materialModalButtonOK" class="materialModalButton" onclick="closeMaterialAlert(event, true)">
+                        <a>Yes</a>
+                    </div>
+                    <div id="materialModalButtonCANCEL" class="materialModalButton"
+                         onclick="closeMaterialAlert(event, false)">
+                        <a>NO </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    <!--<script src="libs/jquery/dist/jquery.min.js"></script>-->
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/materialize/dist/js/materialize.min.js"></script>
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular/angular-cookies.min.js"></script>
+    <script src="libs/angular-ui-router/angular-ui-router.min.js"></script>
+    <script src="libs/angular-materialize/angular-materialize.js"></script>
+    <script src="libs/select2/select2.min.js"></script>
+    <script src="libs/select2/ui-select2.js"></script>
+    <script src="libs/alert/alert.js"></script>
+    <script src="libs/highcharts/highcharts.js"></script>
+
+    <!-- ANGULAR CUSTOM SERVICES-->
+    <script src="js/app.js?v=0.1.9"></script>
+
+</body>
+</html>
