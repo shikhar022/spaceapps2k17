@@ -1,0 +1,56 @@
+<!-- Ozone Layer Deploytion -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sigma Impact AR</title>
+    <meta name="description" content="Impact A-Frame">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+	<script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<!--      <script src="https://rawgit.com/impronunciable/aframe-chartbuilder-component/master/dist/aframe-chartbuilder-component.min.js"></script> -->
+  </head>
+  <body>
+    
+   <a-scene embedded artoolkit="sourceType: webcam;">
+      <a-sphere src="https://cdn.glitch.com/38a530de-c364-4af2-b15d-0bc53f66a9aa%2FOZONE_D1979-04%25P1Y_G%5E360X240.MMERRA_LSH.mp4?1493515143427" position="0 0 0" radius="1">
+        <a-animation attribute="rotation"
+              dur="10000"
+              from= "45 360 180"
+              to="45 180 50"
+              easing= "linear"     
+              repeat="indefinite"></a-animation>
+<!--         <a-animation attribute="scale"
+              dur="10000"
+              from= "1 1 1"
+              to="1.5 1.5 1.5"
+              direction="alternate-reverse"
+              easing= "ease-in-out-circ"     
+              repeat="indefinite"></a-animation> -->
+     </a-sphere> 
+      
+      
+      
+      
+      
+      <!--
+      <a-assets>
+    <video id="penguin-sledding" autoplay loop="true" src="https://cdn.glitch.com/a35f65f3-160b-4011-82fa-e81017534216%2Ffor_epa_2017_1080p30.mp4?1493458647334"></video>
+  </a-assets>
+       
+   Using the asset management system. -->
+  
+  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+  
+<!--       <a-camera position="0 0 3" user-height="0"></a-camera>
+  <a-assets>
+    <video id="penguin-sledding" autoplay loop="true" src="https://cdn.glitch.com/a35f65f3-160b-4011-82fa-e81017534216%2Ffor_epa_2017_1080p30.mp4?1493458647334"></video>
+  </a-assets>
+  <!-- Using the asset management system. 
+  <a-video src="#penguin-sledding" width="4" height="2.5" position="0 0 0"></a-video>
+  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+ <!-- <a-video src="airbending.mp4"></a-video> -->
+      <!--<a-videosphere src="#penguin-sledding" radius="30000" position="4 0 0"></a-videosphere>-->
+  <a-marker-camera preset="hiro"></a-marker-camera>
+</a-scene> 
+  </body>
+</html>
