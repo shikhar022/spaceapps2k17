@@ -18,6 +18,7 @@ for your reference to create compelling AR inspired visualizations for the user 
 
 Chatbot url: m.me/1883035041974863
 API Key: 5SJOws637Na1SwRiSERITAm7I3aubnno4ADAsXav
+Nasa Open APIs URL: https://api.nasa.gov/api.html#NeoWS
 demo API fetch URL: https://api.nasa.gov/planetary/apod?api_key=5SJOws637Na1SwRiSERITAm7I3aubnno4ADAsXav
 
 
