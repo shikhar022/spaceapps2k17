@@ -17,7 +17,8 @@ This project runs with Spring Boot and Nasa Earth science data and contains Augm
 for your reference to create compelling AR inspired visualizations for the user interacting with a chat bot.
 
 Chatbot url: m.me/1883035041974863
-
+API Key: 5SJOws637Na1SwRiSERITAm7I3aubnno4ADAsXav
+demo API fetch URL: https://api.nasa.gov/planetary/apod?api_key=5SJOws637Na1SwRiSERITAm7I3aubnno4ADAsXav
 
 
 
